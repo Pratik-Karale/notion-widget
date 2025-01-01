@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900);
+
+body {
+  background:rgb(25 25 25);
+  color:white;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+  margin: auto;
+}
+h1 {
+  font-weight: 900;
+  font-size: 20px;
+}
+.weekboxes-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.week {
+  --size:5px;
+ text-indent: -9999px;
+ width: var(--size);
+ height: var(--size);
+ background: #00a300;
+/*  margin: 1px; */
+  outline: 1px solid #00000080;
+}
+.week-used {
+  background: #d80000;
+}
+.coin a {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 0 10px 0;
+  text-decoration: none;
+  color: black;
+}
+.coin a:hover {
+  background: #eee;
+}
+.coin a span {
+  margin: 0 2px;
+}
+.coin a span:first-child {
+  font-weight: 900;
+}
+.coin.negative {
+  background: #00a78f;
+}
+.coin.positive {
+  background: #e71123;
+}
+#root > div > div:nth-child(1){
+  display:none;
+}
